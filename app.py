@@ -8,8 +8,7 @@ else:
     st.error("Por favor, configure a sua GEMINI_API_KEY nos Secrets do Streamlit.")
     st.stop()
 
-model = genai.GenerativeModel('gemini-1.5-flash')
-# CONFIGURAÇÃO DA INTERFACE DO USUÁRIO
+model = genai.GenerativeModel('gemini-1.5-flash-latest')# CONFIGURAÇÃO DA INTERFACE DO USUÁRIO
 st.set_page_config(page_title="IA Concursos Jurídicos", page_icon="⚖️")
 st.title("⚖️ Simulador de Casos Práticos para Concursos")
 st.write("Treine para a fase discursiva com casos inéditos baseados na jurisprudência.")
